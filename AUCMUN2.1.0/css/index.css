@@ -1,0 +1,647 @@
+ @font-face {
+    font-family: 'Brush Stroke';
+    src: url("../fonts/brushstr.ttf")
+}
+
+.home {
+    cursor: pointer;
+    z-index: 4;
+}
+
+.font {
+        font-family: "Brush Stroke";
+    }
+
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+/* Start Bar Portrait */
+
+#barPortrait {
+    position: fixed;                                
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    display: none;
+    z-index: 2;
+}
+
+#barPortrait ul {
+    list-style-type: none;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#barPortrait ul li {
+    width: 30%;
+    height: 100%;
+    padding-left: 5%;
+    background-color: white;
+}
+
+.barPortraitLeft {
+    float: left;
+    margin-left: 5%;
+}
+
+#barPortraitRight {
+    float: right;
+    margin-right: 5%;
+}
+
+#smallLogo {
+   margin-top: 1%; 
+   margin-left: 1%;
+   position: absolute;
+   width: 20%;
+   height:25%;
+   background-image: url(../img/AUCMUN2017.png);
+   background-size: contain;
+   background-repeat: no-repeat;  
+}
+
+#smallLogo2 {
+   margin-top: 1%; 
+   margin-left: 1%;
+   position: absolute;
+   width: 20%;
+   height: 45%;
+   background-image: url(../img/AUCMUN2017.png);
+   background-size: contain;
+   background-repeat: no-repeat;  
+}
+
+.logoTopBar {
+    position: relative;  /*to make home href work*/
+    width: 60%;
+    height: 105%;
+    background-image: url(../img/AUCMUN2017.png);
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+#logoAUCKlein {
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/LogoAucKlein.png);
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+.logoAUCGroot {
+    margin: 3%;
+    width: 120%;
+    height: 100%;
+    background-image: url(../img/LogoAucGroot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wihe1 {
+    height: 100%;
+    width: 20%;
+}
+
+.wihe2 {
+    height: 100%;
+    width: 30%;
+}
+
+/* End Top Bar Portrait */
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: rgba(238, 238, 238, 0.7);
+    color: #444;
+    cursor: pointer;
+    padding: 7px;
+    margin: 1px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    outline: none;
+    transition: 0.4s;
+}
+
+a {
+    color: black;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+button.accordion.active {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* Style the accordion panel of homepage. Note: hidden by default */
+div.panel2 {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.panel2 a {
+    color: white;
+    margin-left: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.panel2 a:hover {
+    background-color: white;
+    color: black;
+    padding: 2px;
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel2.show {
+    display: block;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    display: none;
+    width: 100%;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block;
+}
+
+#more:after {
+    content: '\2630'; /* Unicode character for "menu" sign (≡) */
+    font-size: 13px;
+    color: black;
+    margin-left: 0px;
+}
+
+#more.active:after {
+    content: "\2716"; /* Unicode character for "close" sign (X) */
+    color: white; 
+}
+
+.more {
+    position: relative;
+    float: left;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 7px;
+    margin: 1px;
+    padding: 0x;
+    width: 100%;
+    z-index: 2;
+}   
+
+#more {
+    float: left;
+    color: white;
+    border-radius: 7px;
+    margin-top: 1.5%;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+#small {
+    float: left;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+} 
+
+#pageContent {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(238, 238, 238, 0.94);
+    border-radius: 7px;
+}
+
+/* Letter from Secretary General */
+.letter {
+    text-align: left;
+    padding: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.letter h2 {
+    text-align: center;
+}
+
+/* Facebook Logo */
+.faceBook {
+    position: relative;
+    width: 31px;
+    height: 33px;
+    background-image: url(../img/fb.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.fb {
+    background-color: white;
+    border-color: white !important;
+    height: 33px !important;
+    width: 31px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 10px !important;
+    border-radius: 0px !important;
+    overflow: hidden !important;
+}
+
+.topFive {
+    top: -40px;
+}
+
+@media all and (orientation:portrait) {
+    #background {
+        position: absolute;
+        top: 45px;
+        width: 100%;
+        max-width: 1280px;
+        height: 90%;
+        max-height: 700px;
+        z-index: -1;
+        background-image: url(../img/amsterdam.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -170px;
+    }
+    
+    .logoTopBar {
+        left: 0;
+    }
+    
+    #barPortrait {
+        display: block;
+        padding-top: 2px;
+    }
+    
+    .bckgrndWhite {
+        background-color: white; 
+    }
+    
+    .barIndex {
+        background-color: white;
+    }
+    
+    .top-bar-left {
+        width: 50%;   
+    }
+    
+    .top-bar {
+        display: none;
+    }
+    
+    #more {
+        margin-top: 0.1%;
+    }
+    
+    #websiteTitle {
+        background: none;
+        border: none;
+        top: 3%;
+        left: 0%;
+        z-index: 0;
+    }
+    
+    #actualTitle {
+        background-color: rgba(250, 250, 250, 0.6); 
+        width: 100%;
+        border-radius: 7px;
+    }
+    
+    .lead {
+        font-size: 4vw;
+    }
+    
+    #acc {
+        width: 95%;
+        position: absolute;
+        left: 2.5%;
+    }
+    
+    #extraInfo {
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+    .dontShow {
+        display: none;
+    }
+
+    #largeLogo {
+        display: none;
+    }
+    
+    #smallLogo {
+        display: block;
+    }
+    
+    #smallLogo2 {
+        display: none;
+    }
+    
+    #logoAUCKlein {
+        display: block;
+    }
+
+    .logoAUCGroot {
+        display: none;
+    }
+    
+    .faceBook {
+        position: relative;
+        left: 60%;
+    }
+}
+
+@media all and (orientation:landscape) {
+    #background {
+        position: absolute;
+        top: 55px;
+        width: 100%;
+        max-width: 1280px;
+        height: 90%;
+        max-height: 700px;
+        z-index: -1;
+        background-image: url(../img/amsterdam.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bckgrndWhite {
+        background-color: white;
+    }
+    
+    .barIndex {
+        background-color: white;
+    }
+    
+    #barPortrait {
+        display: none;
+    }
+    
+    #websiteTitle {
+        background: none;
+        border: none;
+        top: 0%;
+        left: 1%;
+        z-index: 0;
+    }
+    
+    #actualTitle {
+        background-color: rgba(250, 250, 250, 0.6); 
+        width: 60%;
+        left: 10%;
+        border-radius: 7px;
+    }
+    
+    #extraInfo {
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+    
+    /* Div with accordion */
+    #acc {
+        width: 25%;
+        position: absolute;
+        left: 2.5%;
+    }
+    
+    #acc.accIndexLandscape {
+        left: 25%;
+    }
+    
+    div.panel {
+        width: 200%;
+    }
+    
+    #smallLogo {
+        display: none;
+    }
+    
+    #smallLogo2 {
+        display: block;
+    }
+
+    #largeLogo {
+        position: absolute;   
+    }
+
+    .logoAUCGroot {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-height: 600px) {
+    #largeLogo {
+        display: none;
+    }
+
+    #font {
+        font-size: 6vw;
+    }
+    
+    #smallLogo {
+        display: none;
+    }
+    
+    #logoAUCKlein {
+        display: block;
+    }
+
+    .logoAUCGroot {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1025px) and (orientation: landscape) {
+    #largeLogo {
+        display: none;
+    }
+    
+    #font {
+        font-size: 4vw;
+    }
+    
+    #smallLogo {
+        display: block;
+    }
+    
+    #smallLogo2 {
+        display: none;
+    }
+    
+    #logoAUCKlein {
+        display: none;
+    }
+
+    .logoAUCGroot {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    #barPortrait {
+        display: block;
+        height: 15%;
+    }
+    
+    #background {
+        top: 45px;
+    }
+    
+    .top-bar {
+        display: none;
+    }
+    
+    #websiteTitle {
+        top: 10%;
+    }
+
+    #largeLogo {
+        display: none;
+    }
+    
+    #smallLogo {
+        display: none;
+    }
+    
+     #logoAUCKlein {
+        display: none;
+    }
+
+    .logoAUCGroot {
+        display: block;
+    }
+    
+    .faceBook {
+        position: relative;
+        left: 60%;
+/*        margin-top: 7px;*/
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 450px) {
+    #largeLogo {
+        display: none;
+    }
+
+    #font {
+        font-size: 7vw;
+    }
+    
+    #smallLogo {
+        display: none;
+    }
+    
+    #logoAUCKlein {
+        display: block;
+    }
+
+    .logoAUCGroot {
+        display: none;
+    }
+    
+    #more {
+        float: left;
+        color: white;
+        border-radius: 6px;
+        margin-top: 6px;
+        padding: 0x;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .letter {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #background {
+        position: absolute;
+        top: 55px;
+        left: calc(1/2 * 100% - 640px);
+        width: 1280px;
+        height: 700px;
+        z-index: -1;
+        background-image: url(../img/amsterdam.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #websiteTitle {
+        background: none;
+        top: 0%;
+        left: calc(1/2 * 101% - 640px);
+    }
+    
+    #acc {
+        position: absolute;
+        left: calc(1/2 * 100% - 640px + 20%);
+    }   
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    #acc {
+        top: 25%;
+        width: 30%;
+        left: 62% !important;
+        height: 100%;
+        z-index: 1;
+    }
+    
+    div.panel2 {
+        width: 100%;
+    }
+    
+    button.accordion {
+        width: 100%;
+    }
+    .letter {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (orientation: portrait) and (min-width: 500px) {
+    #acc {
+        width: 50%;
+        position: absolute;
+        left: 25%;
+    }
+    .letter {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+    

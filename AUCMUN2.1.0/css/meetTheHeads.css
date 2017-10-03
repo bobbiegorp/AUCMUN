@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Blunt';
+    src: url("../fonts/blunt.ttf")
+}
+
+#pageContent {
+    background-color: white;
+    height: auto;
+}
+
+#allHeads {
+    position: relative;
+    top: 30px;
+    display: block;
+    margin: auto;
+}
+
+.indHeadsLo {
+    position: absolute;
+    left: 13%;
+    width: 40%;
+    max-width: 200px;
+    height: 11%;
+    max-height: 300px;
+}
+
+.indHeadsBr {
+    position: absolute;
+    left: 10%;
+    width: 40%;
+    max-width: 300px;
+    height: 10%;
+    max-height: 200px;
+}
+
+.textHeadBr, .textHeadLo  {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2vw;
+    padding: 5px;
+    position: relative;
+    top: 0;
+    width: 60%;
+    left: 38%;
+    right: 2%; 
+    border-radius: 7px;
+    border: 1px solid black; 
+    box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.65);
+    background-color: rgba(0, 0, 0, 0.03)
+}
+
+.divBr {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+}
+
+.divLo {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+}
+
+#ishvar {
+    background-image: url(../img/Ishvar-%20Head%20of%20Heads.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+#ruth {
+    background-image: url(../img/Ruth-%20Head%20of%20Secretariat.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+
+#ana {
+    background-image: url(../img/Ana-%20Head%20of%20Finances.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+
+#klaudia { 
+    background-image: url(../img/Klaudia-%20Head%20of%20Logistics.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;   
+} 
+
+#rachelle {
+    background-image: url(../img/Rachelle-%20Head%20of%20PR.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+.functieBr {
+    font-family: 'Blunt';
+    position: absolute;
+    font-size: 2.5vw;
+    top: 104%;
+    left: 14%;
+    height: 20%;
+    width: 150%;
+}
+
+.functieLo {
+    font-family: 'Blunt';
+    font-size: 2.5vw;
+    top: 103%;
+    left: -20%;
+    position: absolute;
+    height: 20%;
+    width: 170%;
+}
+
+@media screen and (device-aspect-ratio: 16/9), screen and (device-aspect-ratio: 16/10) {
+    .textHeadBr, .textHeadLo {
+        font-size: 2vh;
+    }
+    
+    .divLo {
+        max-height: 400px;
+    }
+    
+    .divBr {
+        max-height: 300px;
+    }
+    
+    .indHeadsLo {
+        max-height: 200px;
+    }
+}
+
+@media all and (orientation: portrait) {
+    .textHeadBr, .textHeadLo {
+        font-size: 2vw;
+    }
+    .divLo, .divBr {
+        height: auto;
+    }
+    .indHeadsBr {
+        left: 3%;
+    }
+    .indHeadsLo {
+        left: 6%;
+    }
+    .textHeadBr {
+        left: 50%;
+    }
+    .textHeadLo {
+        left: 38%;
+    }
+    .functieLo {
+        font-size: 3.5vh;
+        left: -2%;
+        top: 113%;
+    }
+    .functieBr {
+        font-size: 3.5vh;
+        left: 7%;
+        top: 80%;
+    }
+}
+
+@media all and (orientation: landscape) and (max-width: 1100px) {
+    .textHeadBr, .textHeadLo {
+        left: 41%;
+    }
+    .functieBr {
+        top: 102%;
+    }
+    .functieLo {
+        top: 101%;
+    }
+}
+
+@media all and (orientation: landscape) and (max-width: 700px) {
+    .textHeadBr, .textHeadLo {
+        left: 50%;
+        font-size: 2.5vw;
+    }
+}

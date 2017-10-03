@@ -1,0 +1,12 @@
+#pageContent {
+    width: 80%;
+    left: 10%;
+    height: auto;
+}
+
+@media screen and (orientation: portrait) and (max-width: 500px) {
+    #pageContent {
+        width: 96%;
+        left: 2%;
+    }
+}

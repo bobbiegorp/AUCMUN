@@ -1,0 +1,12 @@
+#pageContent {
+    height: auto;
+    top: 40%;
+}
+
+
+@media screen and (orientation: landscape) and (max-height: 600px) {
+    #pageContent {
+    height: 60%;
+    top: 60%;
+}
+}

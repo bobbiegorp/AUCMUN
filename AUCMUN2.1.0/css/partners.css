@@ -1,0 +1,105 @@
+#pageContent {
+    position: absolute;
+    height: auto;
+    width: 70%;
+    left: 15%;
+    list-style: none;
+    text-align: center;
+}
+
+#partnerAUC {
+    display: inline-block;
+    width: 55%;
+    height: 80px;
+    padding: 10px;
+    margin: 20px;
+    background-image: url(/img/LogoAucGroot.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#partnerMUN {
+    display: inline-block;
+    width: 50%;
+    height: 120px;
+    padding: 10px;
+    margin: 20px;
+    background-image: url(/img/ENCGKENITRAMUN.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#partnerAIMUN {
+    display: inline-block;
+    width: 50%;
+    height: 120px;
+    padding: 10px;
+    margin: 20px;
+    background-image: url(/img/AIMUN.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#partnerAUCSA {
+    display: inline-block;
+    width: 55%;
+    height: 80px;
+    padding: 10px;
+    margin: 20px;
+    background-image: url(/img/AUCSA.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#partnerMASLOW {
+    display: inline-block;
+    width: 55%;
+    height: 80px;
+    padding: 10px;
+    margin: 20px;
+    background-image: url(/img/MASLOW.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#partnerBIRUN {
+    display: inline-block;
+    width: 55%;
+    height: 80px;
+    padding: 10px;
+    margin: 20px;
+    background-image: url(/img/LogoBirun.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#partnerSUBWAY {
+    display: inline-block;
+    width: 55%;
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+    background-image: url(/img/Subway.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (orientation: portrait) {
+    #pageContent {
+        width: 95%;
+        left: 2.5%; 
+        margin: 0;
+    }
+    
+    #partnerAUC {
+        width: 90%;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #partnerMUN {
+        width: 40%;
+        padding: 0px;
+        margin-top: 0px;
+    }
+}

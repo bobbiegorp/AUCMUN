@@ -1,0 +1,163 @@
+#clickHere {
+    position: absolute;
+    width: 271px;
+    height: 121px;
+    top: 50%;
+    left: 0;
+    z-index: 3;
+}
+
+.teamPic {
+    position: absolute;
+    left: 20%;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    max-height: 467px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 6%;
+    cursor: pointer;
+}
+ 
+.font2 {
+    position: relative;
+    top: -14%;
+    font-size: 2.4rem;
+}
+
+.Secretariat {
+    background-image: url(../img/SECRETARIAT.JPG); 
+} 
+
+.Logistics {
+    background-image: url(../img/LOGISTICS.JPG);  
+    top: 70%;
+    
+}
+
+.PR {
+    background-image: url(../img/PR.JPG);  
+    top: 140%;
+}
+
+.Finances {
+    background-image: url(../img/FINANCES.JPG); 
+    top: 210%;
+}
+
+@media screen and (max-width: 700px) {
+    .teamPic {
+        left: 0;
+    }
+}
+
+@media all and (orientation: landscape) and (max-height: 850px) {
+     .Logistics {
+        top: 90%;
+    }
+
+    .PR {
+        top: 180%;
+    }
+
+    .Finances {
+        top: 270%;  
+    }
+}
+
+@media all and (orientation: landscape) and (max-width: 700px) {
+    .font2 {
+        font-size: 4vw;
+    }
+    
+    .Logistics {
+        top: 120%;
+    }
+
+    .PR {
+        top: 240%;
+    }
+
+    .Finances {
+        top: 360%;  
+    }
+    
+    #clickHere {
+        display: none;
+    }
+}
+
+
+@media all and (orientation: portrait) {
+    .teamPic {
+        margin-top: 12%;
+    }
+    
+    .font2 {
+        font-size: 6vw;
+        top: -9%;
+    }
+    
+    .Logistics {
+        top: 65%;
+    }
+
+    .PR {
+        top: 130%;
+    }
+
+    .Finances {
+         top: 195%;
+    }
+    
+    #clickHere {
+        display: none;
+    }
+}
+
+.popUp {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    background-image: none;
+    background-color: white;
+    width: 80%;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    z-index: 4;
+    padding: 5%;
+    border: 1px solid black;
+    box-shadow: 10px 10px 15px;
+    display: none;
+}
+
+.clsBtn {
+    padding: 2px;
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    text-align: center;
+    background-color: firebrick;
+    color: white;
+    border-radius: 30px;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+}
+
+@media all and (orientation: portrait) {
+    .popUp {
+        width: 100%;
+        height: 85%;
+        left: 0;
+        top: 10%;
+        overflow: scroll;
+    }
+}
+
+@media all and (orientation: landscape) and (max-height: 800px) {
+    .popUp {
+        top: 7%;
+}

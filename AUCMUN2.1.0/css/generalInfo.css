@@ -1,0 +1,30 @@
+.font2 {
+    font-family: 'Brush Stroke';
+    font-size: 1.5vw;
+}
+
+#infoAcco {
+    margin: 5%;
+    margin-left: 7%;
+    margin-right: 8%;
+}
+
+.general {
+    font-family: Verdana, Geneva, sans-serif;
+    position: relative;
+    left: 3%;
+}
+
+@media screen and (orientation: portrait) {
+    .font2 {
+        font-size: 3.5vh;
+    }
+}
+
+/* Tablet Sized Devices */
+@media screen and (orientation: landscape) and (max-height: 800px) {  
+    .font2 {
+        font-size: 3.5vh;
+    }
+}
+  

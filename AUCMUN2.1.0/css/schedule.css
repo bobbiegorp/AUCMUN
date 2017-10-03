@@ -1,0 +1,13 @@
+#background {
+    position: fixed;
+}
+
+.top-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+#websiteTitle {
+    top: 40px;
+}
