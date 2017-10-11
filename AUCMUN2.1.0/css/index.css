@@ -60,29 +60,29 @@ body {
    position: absolute;
    width: 20%;
    height:25%;
-   background-image: url(../img/AUCMUN2017.png);
+   background-image: url(../img/logoaucmun.png);
    background-size: contain;
    background-repeat: no-repeat;  
 }
 
 #smallLogo2 {
-   margin-top: 1%; 
-   margin-left: 1%;
-   position: absolute;
-   width: 20%;
-   height: 45%;
-   background-image: url(../img/AUCMUN2017.png);
-   background-size: contain;
-   background-repeat: no-repeat;  
+    margin-top: 1%;
+    margin-left: 1%;
+    position: absolute;
+    width: 20%;
+    height: 45%;
+    background-image: url(../img/logoaucmun.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .logoTopBar {
-    position: relative;  /*to make home href work*/
+    position: relative; /*to make home href work*/
     width: 60%;
     height: 105%;
-    background-image: url(../img/AUCMUN2017.png);
+    background-image: url(../img/logoaucmun.png);
     background-size: contain;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
 }
 
 #logoAUCKlein {
