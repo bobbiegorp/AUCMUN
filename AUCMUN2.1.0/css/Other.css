@@ -2,6 +2,13 @@
     display: block !important;
 }
 
+.thumbnail {
+    width: 200px;
+    height: auto;
+
+}
+
+
 .top-bar {
     text-align: center;
 }
@@ -132,7 +139,7 @@
     width: 70%;
     left: 15%;
     height: 150%;
-    background-image: url(../img/Schedule.jpg);
+    /*background-image: ;*/
     background-size: contain;
     background-repeat: no-repeat;
 }
